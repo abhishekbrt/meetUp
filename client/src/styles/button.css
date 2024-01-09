@@ -1,0 +1,11 @@
+.login-button{
+    /* height: 40px;
+    width: 100px; */
+    padding: 10px;
+    background-color: skyblue;
+    border-style: none;
+    border-radius: 10px;
+    border: 2px solid red;
+    margin: 5px;
+    width: 10%;
+}
