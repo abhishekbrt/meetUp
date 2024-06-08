@@ -3,6 +3,7 @@ const { promisify } = require("util");
 const dbRun = promisify(db.run.bind(db));
 const dbGet = promisify(db.get.bind(db));
 
+
 const tableName = "logindata";
 
 // function to check user is present in table or not with email
@@ -21,7 +22,7 @@ async function checkUser(email) {
   }
 }
 
-// function to implement registration 
+// function to implement registration
 async function register(email, password) {
   const isAlreadyRegistered = await checkUser(email);
 
@@ -39,7 +40,7 @@ async function register(email, password) {
   }
 }
 
-// function to implement login 
+// function to implement login
 async function login(email, password) {
   const isAlreadyLogin = await checkUser(email);
 
@@ -47,7 +48,7 @@ async function login(email, password) {
     let query = `SELECT password FROM ${tableName} WHERE email=?`;
     try {
       const row = await dbGet(query, [email]);
-      
+
       if (row.password === password) {
         return "user login successfully";
       } else {
@@ -62,9 +63,9 @@ async function login(email, password) {
   }
 }
 
-const authUser={
-    register,
-    login,
-}
+const authUser = {
+  register,
+  login,
+};
 
 module.exports = authUser;

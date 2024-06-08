@@ -1,0 +1,3 @@
+# purpose of controller folder 
+
+the controllers folder typically contains files that handle the application's business logic and act as an intermediary between the routes (which handle HTTP requests) and the models (which interact with the database or external services). Controllers are responsible for processing incoming requests, executing the necessary operations, and sending back the appropriate responses.

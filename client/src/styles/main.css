@@ -1,0 +1,46 @@
+
+.borderTest{
+    border: 2px solid red;
+}
+.borderBlue{
+    border: 2px solid blue;
+}
+/* custom css classes */
+.h-1\/10{
+    height: 10%;
+}
+.h-9\/10{
+    height: 90%;
+}
+
+/* for Landing Page Header buttons */
+.header_button{
+    /* margin: 5px; */
+    /* border: 1px solid black; */
+    /* padding: 10px; */
+    text-align: center;
+    height: fit-content;
+    
+   
+}
+.header_button:hover{
+    /* background-color: rgb(240, 181, 181);
+    border-radius: 8px; */
+    color: white;
+    cursor: pointer;
+}
+
+
+/* login page  */
+.label{
+    font-size: 1.5vw;
+    
+    
+    border: 2px solid blue;
+}
+
+.inputBox{
+   width: 100%;
+  
+
+}

@@ -8,9 +8,10 @@ let db=new sqlite3.Database(dbPath,sqlite3.OPEN_READWRITE,(err)=>{
         console.log(err);
     }
     else{
-        console.log('database connected succesfully');
+        console.log('Old database connected succesfully');
     }
 
 });
+
 
 module.exports=db;
